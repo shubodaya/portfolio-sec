@@ -41,6 +41,33 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
   line-height: normal;
 }
+h2 {
+  text-align: center;
+}
+
+.section-title {
+  position: relative;
+  display: block;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 14px;
+  letter-spacing: 0.8px;
+  text-shadow: 0 10px 24px rgba(0, 0, 0, 0.45);
+  color: #4c90ff;
+}
+.section-title::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 76px;
+  height: 3px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, rgba(76, 144, 255, 0.12), rgba(76, 144, 255, 0.95), rgba(76, 144, 255, 0.12));
+  box-shadow: 0 10px 22px rgba(76, 144, 255, 0.35);
+}
 
 p, a, li, button, ul {
   margin: 0;
@@ -701,6 +728,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-size: 42px;
   font-weight: 700;
   margin-bottom: 20px;
+  text-align: center;
+}
+.project h2,
+.skill h2,
+.contact h2 {
+  text-align: center;
 }
 .about-section p {
   color: #B8B8B8;

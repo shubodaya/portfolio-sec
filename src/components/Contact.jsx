@@ -49,7 +49,7 @@ export const Contact = () => {
             <TrackVisibility once>
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                  <h2>Get In Touch</h2>
+                  <h2 className="section-title">Get In Touch</h2>
                   <form onSubmit={handleSubmit}>
                     <input type="hidden" name="access_key" value="6949e0cb-d280-4f91-94aa-f80685b608a9" />
 

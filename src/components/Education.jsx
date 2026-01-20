@@ -19,7 +19,7 @@ export const Education = () => {
       <Container>
         <Row>
           <Col>
-            <h2>Education</h2>
+            <h2 className="section-title">Education</h2>
           </Col>
         </Row>
         <Row className="education-list">

@@ -44,7 +44,7 @@ export const Certifications = () => {
       <Container>
         <Row>
           <Col>
-            <h2>Certifications</h2>
+            <h2 className="section-title">Certifications</h2>
           </Col>
         </Row>
         <Row>

@@ -47,7 +47,7 @@ export const Experience = () => {
       <Container>
         <Row>
           <Col>
-            <h2>Experience</h2>
+            <h2 className="section-title">Experience</h2>
           </Col>
         </Row>
         <Row className="experience-list">

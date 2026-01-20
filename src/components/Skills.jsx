@@ -240,7 +240,7 @@ export const Skills = () => {
         <div className="row">
           <div className="col-12">
             <div className="skill-bx wow zoomIn">
-              <h2>Skills</h2>
+              <h2 className="section-title">Skills</h2>
               <p>
                 Security operations expertise spanning SIEM monitoring, threat detection, vulnerability management,
                 and secure network access across enterprise and lab environments.

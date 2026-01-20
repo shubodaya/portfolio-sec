@@ -52,8 +52,8 @@ export const Projects = () => {
             <TrackVisibility once>
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                  <h2>Projects</h2>
-                  <p>Selected work focused on security testing, SOC monitoring, compliance, and automation.</p>
+                  <h2 className="section-title">Projects</h2>
+                  <p>Work focused on security testing, SOC monitoring, compliance, and automation.</p>
                   <div className="section-tags section-tags--center">
                     <span>SOC Labs</span>
                     <span>Security Automation</span>
