@@ -70,7 +70,7 @@ export const Experience = () => {
                     ))}
                   </ul>
                 </div>
-                <div>
+                <div className="experience-achievements">
                   <h4 className="experience-subtitle">Key Achievements</h4>
                   <ul>
                     {item.achievements.map((point) => (
