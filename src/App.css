@@ -404,6 +404,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .soc-terminal {
   margin: 60px auto 0;
+  height: var(--soc-terminal-height, 315px);
+  display: flex;
+  flex-direction: column;
 }
 
 .hero__terminal {
@@ -440,6 +443,43 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   text-align: left;
 }
 
+.soc-log__body {
+  --soc-line-step: 18px;
+  --soc-line-gap: 4px;
+  --soc-shift-duration: 520ms;
+  position: relative;
+  padding: 14px;
+  line-height: 1.4;
+  height: var(--soc-panel-height, 300px);
+  overflow: hidden;
+  text-align: left;
+  flex: 1 1 auto;
+}
+
+.soc-log__stream {
+  display: grid;
+  gap: var(--soc-line-gap);
+  transform: translateY(0);
+  transition: transform var(--soc-shift-duration) ease;
+  will-change: transform;
+  grid-auto-rows: var(--soc-line-step);
+}
+
+.soc-log__stream--shift {
+  transform: translateY(calc(-1 * (var(--soc-line-step) + var(--soc-line-gap))));
+}
+
+.soc-log__stream--settle {
+  transition: none;
+  transform: translateY(0);
+}
+
+.soc-log__line {
+  display: block;
+  min-height: var(--soc-line-step);
+  text-align: left;
+}
+
 .terminal-line {
   opacity: 0;
   animation: line-reveal-stay 0.8s ease forwards;
@@ -461,6 +501,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-size: inherit;
   color: inherit;
   opacity: 1;
+}
+
+.soc-log__line.log-alert-button {
+  display: block;
+  width: 100%;
 }
 
 .log-alert-button:hover {
@@ -528,6 +573,23 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .log-tag--alert {
   color: #ff5a5a;
   text-shadow: 0 0 10px rgba(255, 90, 90, 0.5);
+}
+
+.log-tag--notice {
+  color: #ffd27a;
+}
+
+.log-tag--debug {
+  color: #7ee2d7;
+}
+
+.log-tag--error {
+  color: #ff6b6b;
+}
+
+.log-tag--crit {
+  color: #ff2e2e;
+  text-shadow: 0 0 12px rgba(255, 46, 46, 0.55);
 }
 
 @keyframes line-reveal-stay {
