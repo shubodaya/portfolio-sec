@@ -3,7 +3,7 @@
 I built this single-page site to showcase my Security Operations work, labs, and credentials. It runs on React + Vite and is deployed to GitHub Pages.
 
 ## Live Site
-- https://shubodaya.github.io/portfolio-sec/ (auto-published from `main`)
+- https://shubodaya.github.io/portfolio-sec/ 
 
 ## What You'll See
 - Animated hero with my location, availability, and quick actions for resume and contact.
