@@ -2,6 +2,9 @@
 
 I built this single-page site to showcase my Security Operations work, labs, and credentials. It runs on React + Vite and is deployed to GitHub Pages.
 
+![Security Portfolio](https://github.com/shubodaya/portfolio-sec/blob/main/sec.png)
+
+
 ## Live Site
 - https://shubodaya.github.io/portfolio-sec/ 
 
