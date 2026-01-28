@@ -1,4 +1,4 @@
-# Shubodaya Kumar — Cybersecurity Portfolio
+# Shubodaya Kumar - Cybersecurity Portfolio
 
 I built this single-page site to showcase my Security Operations work, labs, and credentials. It runs on React + Vite and is deployed to GitHub Pages.
 
